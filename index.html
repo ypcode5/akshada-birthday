@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff1f5">
+  <title>Happy Birthday Akshada ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background decorations -->
+  <div class="ambient"></div>
+  <div class="sparkle-layer"></div>
+  <div id="heartLayer" aria-hidden="true"></div>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="brand">♡ A LITTLE CELEBRATION</div>
+
+    <button id="musicBtn" class="music-btn" type="button" aria-label="Toggle music">
+      <span id="musicIcon">♫</span>
+      <span id="musicLabel">Music</span>
+    </button>
+  </header>
+
+  <!-- Progress -->
+  <div class="progress-container">
+    <div class="progress-track">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+    <span id="slideCounter">01 / 08</span>
+  </div>
+
+  <main class="stage">
+
+    <!-- SLIDE 1: INTRO -->
+    <section class="slide active" id="slide1">
+      <div class="panel intro-panel">
+        <p class="eyebrow">A LITTLE CELEBRATION FOR SOMEONE SPECIAL</p>
+
+        <h1 class="main-title">Happy Birthday</h1>
+
+        <h2 class="person-name">Dear Akshada <span>❤️</span></h2>
+
+        <p class="intro-description">
+          Today is all about you. May your life be filled with happiness,
+          beautiful moments, endless smiles and everything your heart wishes for.
+        </p>
+
+        <div class="scroll-hint">
+          <span>SCROLL DOWN ↓</span>
+        </div>
+
+        <button class="primary-btn" data-action="next" type="button">
+          Open Your Surprise ♡
+        </button>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: BIRTHDAY WISH -->
+    <section class="slide" id="slide2">
+      <div class="panel birthday-panel">
+        <p class="eyebrow">TODAY IS YOUR DAY</p>
+
+        <h1 class="script-title">Happy Birthday</h1>
+
+        <h2 class="person-name">Akshada ❤️</h2>
+
+        <p class="section-description">
+          A new year, a new chapter and countless beautiful memories waiting
+          to be made. May every day bring you something to smile about.
+        </p>
+
+        <div class="decorative-heart">♡</div>
+
+        <button class="primary-btn" data-action="next" type="button">
+          Continue the Surprise →
+        </button>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: CAKE -->
+    <section class="slide" id="slide3">
+      <div class="panel cake-panel">
+        <p class="eyebrow">MAKE A WISH</p>
+
+        <h2 class="section-title">A Birthday Cake For You</h2>
+
+        <p class="section-description">
+          Close your eyes, make a beautiful wish and blow out the candles.
+        </p>
+
+        <div id="cakeArea" class="cake-area">
+          <div class="cake">
+            <div class="candles">
+              <span class="candle"><i class="flame"></i></span>
+              <span class="candle"><i class="flame"></i></span>
+              <span class="candle"><i class="flame"></i></span>
+            </div>
+            <div class="cake-top"></div>
+            <div class="cake-middle"></div>
+            <div class="cake-bottom"></div>
+            <div class="cake-plate"></div>
+          </div>
+        </div>
+
+        <p id="cakeMessage" class="message-text">
+          Your wish is waiting to come true ✨
+        </p>
+
+        <button id="blowBtn" class="primary-btn" type="button">
+          Blow the Candles 🕯️
+        </button>
+
+        <button id="cakeNext" class="secondary-btn" data-action="next" type="button">
+          Continue →
+        </button>
+      </div>
+    </section>
+
+    <!-- SLIDE 4: PHOTO GALLERY -->
+    <section class="slide" id="slide4">
+      <div class="panel gallery-panel">
+        <p class="eyebrow">LITTLE MOMENTS, BEAUTIFUL MEMORIES</p>
+
+        <h2 class="section-title">A Gallery of Smiles</h2>
+
+        <p class="section-description">
+          Some moments deserve to be remembered forever. ♡
+        </p>
+
+        <div class="photo-gallery">
+          <div class="photo-card">
+            <img src="images/akshada1.jpg" alt="Akshada memory 1">
+          </div>
+
+          <div class="photo-card">
+            <img src="images/akshada2.jpg" alt="Akshada memory 2">
+          </div>
+
+          <div class="photo-card">
+            <img src="images/akshada3.jpg" alt="Akshada memory 3">
+          </div>
+        </div>
+
+        <p class="gallery-caption">
+          Keep collecting moments that make you happy.
+        </p>
+
+        <button class="primary-btn" data-action="next" type="button">
+          One More Surprise →
+        </button>
+      </div>
+    </section>
+
+    <!-- SLIDE 5: QUIZ -->
+    <section class="slide" id="slide5">
+      <div class="panel quiz-panel">
+        <p class="eyebrow">A LITTLE BIRTHDAY GAME</p>
+
+        <h2 class="section-title">One Little Question</h2>
+
+        <p class="quiz-question">
+          What should your birthday be filled with?
+        </p>
+
+        <div class="quiz-options">
+          <button class="quiz-option" data-answer="correct" type="button">
+            Happiness and smiles ♡
+          </button>
+
+          <button class="quiz-option" data-answer="wrong" type="button">
+            Stress and worries
+          </button>
+
+          <button class="quiz-option" data-answer="wrong" type="button">
+            Endless homework
+          </button>
+        </div>
+
+        <p id="quizMessage" class="message-text" aria-live="polite"></p>
+
+        <button id="quizNext" class="primary-btn" data-action="next" type="button">
+          Continue →
+        </button>
+      </div>
+    </section>
+
+    <!-- SLIDE 6: WISH FORM -->
+    <section class="slide" id="slide6">
+      <div class="panel wish-panel">
+        <p class="eyebrow">A WISH FROM YOU</p>
+
+        <h2 class="section-title">Make a Birthday Wish</h2>
+
+        <p class="section-description">
+          Write down a wish or a little message. Let this moment be yours.
+        </p>
+
+        <form id="wishForm">
+          <label for="guestName">Your name</label>
+          <input
+            id="guestName"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+          >
+
+          <label for="birthdayWish">Your birthday wish</label>
+          <textarea
+            id="birthdayWish"
+            name="wish"
+            rows="4"
+            placeholder="Write your wish here..."
+            required
+          ></textarea>
+
+          <button id="sendWishBtn" class="primary-btn" type="submit">
+            Send My Wish ♡
+          </button>
+
+          <p id="wishStatus" class="message-text" aria-live="polite"></p>
+        </form>
+
+        <button class="secondary-btn" data-action="next" type="button">
+          Continue →
+        </button>
+      </div>
+    </section>
+
+    <!-- SLIDE 7: PERSONAL LETTER -->
+    <section class="slide" id="slide7">
+      <div class="panel letter-panel">
+        <p class="eyebrow">A LITTLE MESSAGE FOR YOU</p>
+
+        <h2 class="script-title">A Birthday Letter</h2>
+
+        <div class="letter-content">
+          <p>Dear Akshada,</p>
+
+          <p>
+            I wanted to do something a little different to make your day feel special.
+          </p>
+
+          <p>
+            I may not always find the perfect words, but I genuinely hope this year
+            brings you happiness, confidence, exciting opportunities and countless
+            reasons to smile.
+          </p>
+
+          <p>
+            You deserve all the beautiful things life has to offer. ♡
+          </p>
+
+          <p class="letter-signature">
+            Wishing you a beautiful birthday,<br>
+            Keep smiling, Akshada! ❤️
+          </p>
+        </div>
+
+        <button class="primary-btn" data-action="next" type="button">
+          One Last Thing →
+        </button>
+      </div>
+    </section>
+
+    <!-- SLIDE 8: FINALE -->
+    <section class="slide" id="slide8">
+      <div class="panel finale-panel">
+        <p class="eyebrow">UNTIL ANOTHER BEAUTIFUL DAY</p>
+
+        <h1 class="script-title">Keep Smiling</h1>
+
+        <h2 class="person-name">Happy Birthday, Akshada! ❤️</h2>
+
+        <p class="finale-message">
+          May your days be bright, your dreams come true and your heart
+          always find reasons to smile.
+        </p>
+
+        <div class="finale-heart">💗</div>
+
+        <p class="finale-footer">Made with love, just for you ♡</p>
+
+        <button id="restartBtn" class="primary-btn" type="button">
+          Relive the Surprise ↻
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Navigation -->
+  <nav class="navigation" aria-label="Slide navigation">
+    <button id="prevBtn" class="nav-btn" type="button" disabled>
+      ← Back
+    </button>
+
+    <span class="nav-dots" id="navDots"></span>
+
+    <button id="nextBtn" class="nav-btn" type="button">
+      Next →
+    </button>
+  </nav>
+
+  <footer class="page-footer">
+    Made with ♡ for Akshada
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Background music -->
+  <audio id="birthdayMusic" loop>
+    <source src="audio/dilruba-dilnasheen.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
